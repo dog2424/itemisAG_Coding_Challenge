@@ -1,8 +1,8 @@
-from app.main import loadFromDB
+from db.from_db import loadItemsFromDB
 
 class Item():
 
-    inventory = loadFromDB()
+    inventory = loadItemsFromDB()
 
     def __init__(self):
         item = list(Item.inventory)
