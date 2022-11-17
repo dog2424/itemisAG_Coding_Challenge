@@ -14,3 +14,10 @@ def loadTaxFromDB():
         taxes = json.load(taxDB)
 
     return taxes
+
+def loadShoppingBasketsFromDB(shoppingBasketNumb):
+    shoppingCart = []
+    with open(os.path.join('data', 'shoppingBasket'+shoppingBasketNumb+'.json'), 'r') as shoppingCartDB:
+        shoppingCart = json.load(shoppingCartDB)
+
+    return shoppingCart

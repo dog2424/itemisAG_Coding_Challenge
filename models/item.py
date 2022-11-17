@@ -14,5 +14,17 @@ class Item():
         self.tax = self.itemTaxCalculator()
 
     def itemTaxCalculator(self):
-        tax = 0
-        return tax
+
+        currentTax = 0
+        noTaxItem = ['books', 'food', 'medical']
+        standardItemTax = 10
+        importedItemTax = 5
+
+        if(self.imported is True):
+            currentTax += importedItemTax
+        if(self.category not in noTaxItem):
+            currentTax += standardItemTax
+        
+        return (currentTax/100)*self.price
+
+    
