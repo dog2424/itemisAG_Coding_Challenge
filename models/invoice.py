@@ -34,10 +34,12 @@ class Invoice:
         for value in self.invoice:
             item = Item(value[0])
             grandTotal = item.price + item.tax
-            values.append("{} {} at {:.2f}".format(value[1], item.name, grandTotal))
+            values.append(
+                "> " + "{} {} at {:.2f}".format(value[1], item.name, grandTotal)
+            )
 
         invoiceTotalTax, grandTotal = self.grandTotal()
 
-        print(values)
-        print(invoiceTotalTax)
-        print(grandTotal)
+        print("\n".join(values))
+        print("> Sales Taxes: " + str(invoiceTotalTax))
+        print("> Total: " + str(grandTotal))
