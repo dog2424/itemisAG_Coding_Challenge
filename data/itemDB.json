@@ -1,9 +1,23 @@
 [
   {
-    "id": "",
-    "name": "",
-    "category": "",
-    "imported": "",
-    "price": 10
+    "id": "ID1234",
+    "name": "dracula",
+    "category": "books",
+    "imported": "false",
+    "price": 12.49
+  },
+  {
+    "id": "ID123",
+    "name": "music CD",
+    "category": "fun",
+    "imported": "false",
+    "price": 14.99
+  },
+  {
+    "id": "ID543",
+    "name": "chocolate bar",
+    "category": "food",
+    "imported": "false",
+    "price": 0.85
   }
 ]
