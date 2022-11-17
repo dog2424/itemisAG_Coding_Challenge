@@ -1,4 +1,0 @@
-
-
-class Tax():
-    pass
