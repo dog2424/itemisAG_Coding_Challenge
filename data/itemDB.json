@@ -19,5 +19,47 @@
     "category": "food",
     "imported": "false",
     "price": 0.85
+  },
+  {
+    "id": "ID213",
+    "name": "box of chocolates",
+    "category": "food",
+    "imported": "yes",
+    "price": 10.0
+  },
+  {
+    "id": "ID432",
+    "name": "bottle of perfume",
+    "category": "fun",
+    "imported": "yes",
+    "price": 47.5
+  },
+  {
+    "id": "ID856",
+    "name": "bottle of perfume",
+    "category": "fun",
+    "imported": "yes",
+    "price": 27.99
+  },
+  {
+    "id": "ID564",
+    "name": "bottle of perfume",
+    "category": "fun",
+    "imported": "false",
+    "price": 18.99
+  },
+  {
+    "id": "ID745",
+    "name": "headache pills",
+    "category": "medical",
+    "imported": "false",
+    "price": 9.75
+  },
+  {
+    "id": "ID3456",
+    "name": "box of chocolates",
+    "category": "food",
+    "imported": "yes",
+    "price": 11.25
   }
 ]

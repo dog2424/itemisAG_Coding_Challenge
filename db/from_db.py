@@ -30,5 +30,4 @@ def loadShoppingBasketsFromDB(shoppingBasketNumb):
         value = (qty, id)
         cart.append(value)
 
-    print(cart)
     return cart
