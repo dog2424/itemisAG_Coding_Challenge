@@ -26,3 +26,18 @@ class Invoice():
         grandTotal = invoiceTotalTax + total
 
         return invoiceTotalTax, grandTotal
+
+    def invoiceDetails(self):
+
+        values = []
+        for value in self.invoice:
+            item = Item(value[0])
+            grandTotal = item.price + item.tax
+            values.append(value[1], item.name, grandTotal)
+        
+        invoiceTotalTax, grandTotal = self.grandTotal()
+
+        print(values)
+        print(invoiceTotalTax)
+        print(grandTotal)
+            
