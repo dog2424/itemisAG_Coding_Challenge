@@ -62,6 +62,8 @@ Output 3:
 
 ## INSTRUCTIONS
 
-> Go to itemisAG_Coding_Challenge directory
-> To run solution write: py main.py [order number] example: py main.py 1
-> To run unittests write: py sales_tax_unit_test.py
+### Go to itemisAG_Coding_Challenge directory
+
+### To run solution write: py main.py [order number] example: py main.py 1
+
+### To run unittests write: py sales_tax_unit_test.py
