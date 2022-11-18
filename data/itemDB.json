@@ -61,5 +61,33 @@
     "category": "food",
     "imported": true,
     "price": 11.25
+  },
+  {
+    "id": "testSdTax01",
+    "name": "glass",
+    "category": "material",
+    "imported": false,
+    "price": 4
+  },
+  {
+    "id": "testSdTax02",
+    "name": "apple",
+    "category": "food",
+    "imported": false,
+    "price": 4
+  },
+  {
+    "id": "testSdTax03",
+    "name": "glass",
+    "category": "material",
+    "imported": true,
+    "price": 4
+  },
+  {
+    "id": "testSdTax04",
+    "name": "bread",
+    "category": "food",
+    "imported": true,
+    "price": 4
   }
 ]
