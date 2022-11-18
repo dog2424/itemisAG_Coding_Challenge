@@ -6,11 +6,13 @@ class Invoice:
     def __init__(self):
         self.invoice = []
 
+    # add items to the invoice
     def addNewItem(self, qty, id):
 
         itemToBeAdded = (id, qty)
         self.invoice.append(itemToBeAdded)
 
+    # calculate total invoice tax
     def invoiceTotalTax(self):
         invoiceTotalTax = 0
         for value in self.invoice:
@@ -21,6 +23,7 @@ class Invoice:
 
         return roundedTax
 
+    # calculate tax + total
     def grandTotal(self):
         invoiceTotalTax = self.invoiceTotalTax()
         total = 0
@@ -31,6 +34,7 @@ class Invoice:
 
         return invoiceTotalTax, grandTotal
 
+    # print out details
     def invoiceDetails(self):
 
         values = []
