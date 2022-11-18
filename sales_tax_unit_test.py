@@ -8,28 +8,24 @@ class TestItem(unittest.TestCase):
     # test standard item taxes
     def testStandardTax(self):
         order = Item("testSdTax01")
-        print(order.itemTaxCalculator)
 
         self.assertEqual(order.tax, 0.4)
 
     # test  item without taxes
     def testItemWithoutTax(self):
         order = Item("testSdTax02")
-        print(order.itemTaxCalculator)
 
         self.assertEqual(order.tax, 0)
 
     # test imported item taxes
     def testImportedTax(self):
         order = Item("testSdTax03")
-        print(order.itemTaxCalculator)
 
         self.assertEqual(order.tax, 0.6)
 
     # test imported item taxes in the exception
     def testImportedWithoutTax(self):
         order = Item("testSdTax04")
-        print(order.itemTaxCalculator)
 
         self.assertEqual(order.tax, 0.2)
 
@@ -70,7 +66,6 @@ class TestItemDB(unittest.TestCase):
         property = ["id", "name", "category", "imported", "price"]
         for item in inventory:
 
-            print(item)
             if not len([x for x in property if x in item]) == len(property):
                 inventoryCheck = False
             else:
