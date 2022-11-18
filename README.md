@@ -60,6 +60,13 @@ Output 3:
 > Sales Taxes: 6.70
 > Total: 74.68
 
+## COMMENTS
+
+The inventory was stored in data/itemDB.json, in the future it will be easily replaceable with a DB
+The shopping baskets were stored in data/shoppingBasket"number".json
+To access the db I created methods "from_db" and for future use "to_db"
+There are two classes/objects: one for the item and one for the invoice
+
 ## INSTRUCTIONS
 
 ### Go to itemisAG_Coding_Challenge directory
