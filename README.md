@@ -59,3 +59,9 @@ Output 3:
 > 1 imported box of chocolates: 11.85
 > Sales Taxes: 6.70
 > Total: 74.68
+
+## INSTRUCTIONS
+
+> Go to itemisAG_Coding_Challenge directory
+> To run solution write: py main.py [order number] example: py main.py 1
+> To run unittests write: py sales_tax_unit_test.py
