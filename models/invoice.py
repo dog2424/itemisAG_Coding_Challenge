@@ -1,4 +1,5 @@
 from models.item import Item
+from math import ceil
 
 
 class Invoice:
@@ -14,9 +15,11 @@ class Invoice:
         invoiceTotalTax = 0
         for value in self.invoice:
             item = Item(value[0])
-            invoiceTotalTax += item.tax * value[1]
 
-        return invoiceTotalTax
+            invoiceTotalTax += item.tax * value[1]
+            roundedTax = ceil(round(invoiceTotalTax, 2) * 20) / 20
+
+        return roundedTax
 
     def grandTotal(self):
         invoiceTotalTax = self.invoiceTotalTax()
@@ -42,4 +45,4 @@ class Invoice:
 
         print("\n".join(values))
         print("> Sales Taxes: " + str(invoiceTotalTax))
-        print("> Total: " + str(grandTotal))
+        print("> Total: " + str(round((grandTotal), 2)))

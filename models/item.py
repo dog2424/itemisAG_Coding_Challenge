@@ -1,4 +1,5 @@
 from db.from_db import loadItemsFromDB
+from math import ceil
 
 
 class Item:
@@ -26,4 +27,7 @@ class Item:
         if self.category not in noTaxItem:
             currentTax += standardItemTax
 
-        return (currentTax / 100) * self.price
+        percentTax = (currentTax / 100) * self.price
+        roundedTax = ceil(round(percentTax, 2) * 20) / 20
+
+        return roundedTax

@@ -3,63 +3,63 @@
     "id": "ID1234",
     "name": "book",
     "category": "books",
-    "imported": "false",
+    "imported": false,
     "price": 12.49
   },
   {
     "id": "ID123",
     "name": "music CD",
     "category": "fun",
-    "imported": "false",
+    "imported": false,
     "price": 14.99
   },
   {
     "id": "ID543",
     "name": "chocolate bar",
     "category": "food",
-    "imported": "false",
+    "imported": false,
     "price": 0.85
   },
   {
     "id": "ID213",
     "name": "box of chocolates",
     "category": "food",
-    "imported": "yes",
+    "imported": true,
     "price": 10.0
   },
   {
     "id": "ID432",
     "name": "bottle of perfume",
     "category": "fun",
-    "imported": "yes",
+    "imported": true,
     "price": 47.5
   },
   {
     "id": "ID856",
     "name": "bottle of perfume",
     "category": "fun",
-    "imported": "yes",
+    "imported": true,
     "price": 27.99
   },
   {
     "id": "ID564",
     "name": "bottle of perfume",
     "category": "fun",
-    "imported": "false",
+    "imported": false,
     "price": 18.99
   },
   {
     "id": "ID745",
     "name": "headache pills",
     "category": "medical",
-    "imported": "false",
+    "imported": false,
     "price": 9.75
   },
   {
     "id": "ID3456",
     "name": "box of chocolates",
     "category": "food",
-    "imported": "yes",
+    "imported": true,
     "price": 11.25
   }
 ]
