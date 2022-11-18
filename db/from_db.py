@@ -6,6 +6,7 @@ def loadItemsFromDB():
 
     with open(os.path.join("data", "itemDB.json"), "r") as itemDB:
         inventory = json.load(itemDB)
+
     return inventory
 
 

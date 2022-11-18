@@ -1,6 +1,7 @@
 import unittest
 from models.item import Item
 from models.invoice import Invoice
+from db.from_db import *
 
 
 class TestItem(unittest.TestCase):
@@ -59,6 +60,23 @@ class TestInvoice(unittest.TestCase):
         invoiceTotalTax, grandTotal = testInv.grandTotal()
         self.assertEqual(invoiceTotalTax, 1.2)
         self.assertEqual(grandTotal, 17.2)
+
+
+class TestItemDB(unittest.TestCase):
+    # check intemDB.json correctness
+    def testItemsDB(self):
+        inventory = loadItemsFromDB()
+        inventoryCheck = False
+        property = ["id", "name", "category", "imported", "price"]
+        for item in inventory:
+
+            print(item)
+            if not len([x for x in property if x in item]) == len(property):
+                inventoryCheck = False
+            else:
+                inventoryCheck = True
+
+        self.assertEqual(inventoryCheck, True)
 
 
 unittest.main()

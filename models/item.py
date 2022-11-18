@@ -9,6 +9,9 @@ class Item:
     def __init__(self, id):
         item = list(filter(lambda x: x.get("id") == id, Item.inventory))
 
+        # check if item id exist
+        if len(item) < 1:
+            raise Exception("ID not found")
         # items properties
         self.name = item[0]["name"]
         self.category = item[0]["category"]
